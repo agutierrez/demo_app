@@ -23,4 +23,11 @@ describe PagesController do
     end
   end # GET contact
 
+  describe "GET 'help'" do
+    it "should be succesfull" do
+      get 'help'
+      response.should be_success
+    end
+  end
+
 end
